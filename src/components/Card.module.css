@@ -1,0 +1,10 @@
+.card{
+  background-color: rgba(79, 175, 20, 0.33);
+  border: 2px solid rgba(49, 12, 127, 0.946);
+  justify-items: center;
+}
+.h1 {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 3em;
+}
