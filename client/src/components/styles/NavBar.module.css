@@ -1,0 +1,13 @@
+.nav {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(3, 75, 8) 0%,
+ rgb(33, 128, 44) 35%, rgb(104, 189, 150) 45%, rgb(182, 233, 186) 57%, 
+ rgb(185, 222, 197) 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 2px solid rgba(42, 152, 84, 0.362);
+  padding: 10px;
+  margin: 20px;
+}

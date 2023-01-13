@@ -1,0 +1,22 @@
+.Card {
+  background-color: rgba(61, 113, 29, 0.33);
+  height: 300px;
+  width: 200px;
+  justify-items: center;
+ padding: 20px;
+  box-shadow:
+       inset 0 -3em 5em rgba(210, 51, 51, 0.1),
+             0 0  0 1px rgb(65, 200, 144),
+             0.3em 0.3em 1em rgba(6, 14, 13, 0.3);
+}
+
+.H2 {
+  display: flex;
+  justify-content: space-around;
+}
+img {
+  display: flex;
+  margin-left: 20px;
+  height: 50%;
+  width: 80%;
+}
