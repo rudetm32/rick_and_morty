@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import validate from "./validate";
 
-export default function Form() {
+export default function Form(props) {
   const [userData, setUserData] = useState({
     username: "",
     password: "",
@@ -24,9 +23,16 @@ export default function Form() {
       })
     );
   }
+  function handleSubmit(e) {
+    e.preventDefault();
+    props.login(userData);
+    
+  }
   return (
     <div>
-      <form>
+      <form onSubmit={(e)=>{
+        handleSubmit(e)
+      }}>
         <label>username</label>
         <input
           type="text"
@@ -41,14 +47,8 @@ export default function Form() {
           placeholder="type pass"
           onChange={(e) => handleInput(e)}
         ></input>
-        <div>
-          <Link to="/home">
-            {Object.keys(errors).length === 0 ?
-              (
-              <button type="submit">submit</button>
-              )
-              : null}
-          </Link>
+        <div>          
+              <button type="submit">submit</button> 
         </div>
       </form>
     </div>

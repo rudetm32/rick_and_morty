@@ -18,6 +18,11 @@ export default function NavBar(props) {
         </Link>
       </div>
       <div>
+        <Link to ="/favorites">
+          <button>Favorites</button>
+        </Link>
+      </div>
+      <div>
         <SearchBar onSearch={props.onSearch} />
       </div>
     </div>
