@@ -4,12 +4,12 @@ import { useState, useEffect } from "react";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 
 
-import Cards from "./components/Cards.jsx";
-import NavBar from "./components/NavBar.jsx";
-import About from "./components/About";
-import Detail from "./components/Detail";
-import Form from "./components/Form"
-import Favorites from "./components/Favorites"
+import Cards from "./components/cards/Cards";
+import NavBar from "./components/navbar/NavBar";
+import About from "./components/about/About";
+import Detail from "./components/details/Detail";
+import Form from "./components/formulario/Form"
+import Favorites from "./components/favoritos/Favorites"
 
 function App() {
   const [access, setAccess]=useState(false)
@@ -33,7 +33,7 @@ function App() {
 
   useEffect(()=>{
     !access && navigate("/");
-  }, [access]);
+  }, [access, navigate]);
 
   const Location =useLocation()
   const [character, setCharacter] = useState([]);

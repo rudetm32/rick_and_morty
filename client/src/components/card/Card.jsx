@@ -1,8 +1,8 @@
-import s from "./styles/Card.module.css";
+import s from "../card/Card.module.css";
 import { Link } from "react-router-dom";
 import {useState, useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addFavorites, deleteFavorites } from "../redux/action";
+import { addFavorites, deleteFavorites } from "../../redux/action";
 
 export default function Card(props) {
 const [isFav, SetIsFav]=useState(false);
@@ -24,7 +24,7 @@ useEffect(()=>{
       SetIsFav(true)
     }
   })
-},[myFavorites])
+},[myFavorites, props.id])
 
   return (
     <div className={s.Card}>

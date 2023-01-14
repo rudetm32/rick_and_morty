@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import { useParams } from "react-router-dom";
 
-import s from "./styles/Detail.module.css"
+import s from "./Detail.module.css"
 
 export default function Detail() {
   const { dId } = useParams()
