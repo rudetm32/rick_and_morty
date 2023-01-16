@@ -12,8 +12,8 @@ Sin embargo, y con toda la verdad de esta frase:
  <p className={s.p}>¡Vale la pena el esfuerzo!.</p>
     </div>
     <div className={s.encabezado}>
-    <p>Juan Antonio Ruiz Hernandez</p>
-    <p>Desarrollador Web Full Stack</p>
+    <p>Soy Henry: Juan Antonio Ruiz Hernandez</p>
+    <p>Cohorte 33-b: Desarrollo Web Full Stack</p>
     </div>
     
     <div className={s.tecnologias}>

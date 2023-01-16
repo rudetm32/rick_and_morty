@@ -24,15 +24,28 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: rgb(9, 9, 27);
         display: flex;
-    
      }
+
   button{
     background-color: rgb(81, 126, 139);
     border-color: rgb(98, 129, 180);
     color: rgb(0, 10, 2);
-    font-size: medium;
-  }
+    font-size: medium;  
+}
+
   button:hover{
     color: rgb(183, 177, 14)
   }
-  
+  .danger ul{
+    display: flex;
+    color:rgb(215, 17, 17);
+  }
+  .warning{
+    border: .20em solid rgb(234, 19, 30);
+    text-align: justify;
+  }
+  .p{
+    display: flex;
+    justify-content: baseline;
+    text-align: justify;
+  }

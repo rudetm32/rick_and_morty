@@ -11,12 +11,17 @@ export default function validate(inputs) {
   } else if (!inputs.password) {
     errors.password = "el paswword no puede estar vacio";
   } else if (!passwordRegex.test(inputs.password)) {
-    errors.password = 
-    `El password debe tener al menos 8 caracteres.
-    Debe contener una letra mayuscula.
-    Debe contener un letra minuscula.
-    Debe contener un digito.`;
-    // }
-  }
+    errors.password = (
+    <ul>
+      <li>
+      El password debe tener al menos 8 caracteres
+      </li>
+      <li>Debe contener una letra mayuscula</li>
+      <li>Debe contener un letra minuscula</li>
+      <li>Debe contener un digito
+      </li>
+    </ul> 
+    )
+      }
   return errors;
 }

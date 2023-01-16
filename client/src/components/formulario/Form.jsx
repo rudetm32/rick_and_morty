@@ -37,20 +37,24 @@ export default function Form(props) {
         <br />
         <label>Username</label>
         <input
+        className={errors.username && s.warning}
           type="text"
           name="username"
           placeholder="Ingrese usuario..."
           onChange={(e) => handleInput(e)}
         ></input>
+        <p className={s.danger}>{errors.username}</p>
         <br />
         <br/>
         <label>Password</label>
         <input
+        className={errors.password && s.warning}
           type="password"
           name="password"
           placeholder="Ingrese password..."
           onChange={(e) => handleInput(e)}
         ></input>
+        <p className={s.danger}>{errors.password}</p>  
         <br />
         <br />
         <div> 
