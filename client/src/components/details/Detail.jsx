@@ -25,19 +25,18 @@ export default function Detail() {
 
   return (
     <>
-    <div className={s.container}>
-    <div className={s.texto}>
-    <h1>{character.name}</h1>
+    <div className={s.Card}>
+      <h1>{character.name}</h1>
       <h2>{character.status}</h2>
       <h2>{character.species}</h2>
       <h2>{character.gender}</h2>
       <p>{character.origin?.name}</p>
-        <img src={character.image} alt="" />
-      </div>  
+      <div className={s.imagen}>
+      <img src={character.image} alt="" />
+      </div>
     </div>
     </>
   );
 }
-
 
 

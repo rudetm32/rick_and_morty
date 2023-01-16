@@ -1,0 +1,43 @@
+.encabezado{
+    margin-top: .2em;
+    margin-right: 800px;
+    display:inline-block;
+    justify-content:flex-start;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 800;
+
+}
+.mensaje{
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 2em;
+    padding-top: .5em;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 1px rgb(46, 156, 137),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    display:inline-block;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align: justify;
+    background-color: rgba(195, 195, 198, 0.412);
+}
+.p{
+    display: flex;
+    justify-content: center;
+    font-size:x-large;
+}
+.tecnologias{
+    margin-bottom: 4em;
+    margin-left: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}

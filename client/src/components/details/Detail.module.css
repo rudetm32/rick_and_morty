@@ -1,17 +1,11 @@
-.container {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    margin: auto;
-    width: 520px;
-    height: 350px;
-    background: rgba(255, 255, 255, 0.527);
-    box-shadow: 5px 5px 15px rgba(rose, .5);
-    border-radius: 10px;
-  }
+.Card > imagen {
+  width: 300px;
+  height: 250px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 50px;
+  margin-left: 600px;
+  display: flex;
+  flex-direction: row;
   
-
-.imagen{
-    content: icon;
-    width: 50%;
 }

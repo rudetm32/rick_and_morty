@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import validate from "../validate";
+import s from "./Form.module.css"
 
 export default function Form(props) {
   const [userData, setUserData] = useState({
@@ -29,27 +30,34 @@ export default function Form(props) {
     
   }
   return (
-    <div>
+    <div className={s.container}>
       <form onSubmit={(e)=>{
         handleSubmit(e)
       }}>
+        <br />
         <label>Username</label>
         <input
           type="text"
           name="username"
-          placeholder="type name"
+          placeholder="Ingrese usuario..."
           onChange={(e) => handleInput(e)}
         ></input>
+        <br />
+        <br/>
         <label>Password</label>
         <input
           type="password"
           name="password"
-          placeholder="type pass"
+          placeholder="Ingrese password..."
           onChange={(e) => handleInput(e)}
         ></input>
-        <div>          
-              <button type="submit">submit</button> 
+        <br />
+        <br />
+        <div> 
+
+              <button className={s.btn} type="submit">Ingresar</button> 
         </div>
+        <br />
       </form>
     </div>
   );

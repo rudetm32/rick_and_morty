@@ -30,20 +30,21 @@ useEffect(()=>{
     <div className={s.Card}>
      <div>
       {isFav ? (
-      <button onClick={()=>handleFavorite(props)}> k</button>
+      <button  onClick={()=>handleFavorite(props)}>💚</button>
       ) : (
-        <button onClick={()=>handleFavorite(props)}>K</button>
+        <button onClick={()=>handleFavorite(props)}>♡</button>
       )}
-     <button onClick={props.onClose}>X</button>
+     <button className={s.btn} onClick={props.onClose}>X</button>
      </div>
-      <Link to={`/detail/${props.id}`}>
         <h2>{props.name}</h2>
+        <Link to={`/detail/${props.id}`}>
         <img src={props.image} alt="imagen no encontrada" />
+        </Link>
         <div className={s.H2}>
           <p>{props.species}</p>
           <p>{props.gender}</p>
         </div>
-      </Link>
+      
     </div>
   );
 }

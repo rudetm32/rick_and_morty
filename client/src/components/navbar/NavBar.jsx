@@ -7,20 +7,14 @@ export default function NavBar(props) {
   return (
     <div className={styles.nav}>
         <ul>
-          <li>
-            <Link to="/home">
-              <button>Home</button>
-            </Link>
+          <li className={styles.a}>
+            <Link to="/home">Home</Link>
+          </li>
+          <li  >
+            < Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/about">
-              <button>About</button>
-            </Link>
-          </li>
-          <li>
-            <Link to ="/favorites">
-              <button>Favorites</button>
-            </Link>
+            <Link to ="/favorites">Favorites</Link>
           </li>
           <li>
             <SearchBar onSearch={props.onSearch} />

@@ -11,11 +11,11 @@ export default function SearchBar(props) {
       <input
         type="text"
         name="search"
-        placeholder="escribe "
+        placeholder="Ingrese un id... "
         onChange={(e) => handleInput(e)}
         value={character}
       />
-      <button onClick={() => props.onSearch(character)}>Agregar</button>
+      <button onClick={() => props.onSearch(character)}>Enviar</button>
     </div>
   );
 }
